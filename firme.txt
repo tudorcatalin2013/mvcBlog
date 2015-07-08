@@ -1,0 +1,32 @@
+neobyte
+fast sone capture
+
+
+
+
+#schimbarea numelui fisierului implicit. le va testa pe rand si il va accesa peprimul gasit
+Directoryindex index.php ionescu.html popescu.php javascript.js text.txt altformat.format
+
+
+#accesul la continutul folderului implicit cu toate subfolderele lui. dar daca exita un fisier implicit va reda , dar nu va da acces subfolserelor si fisierelor din el 
+Options -/+ Index
+
+#filtrarea unor tpuri de fiseire. nu le arata ,dar daca stii cum se numesc te lasa sa le redai
+IndexIgnore *.html *.txt *Model.php 
+
+#permite/interzice accesul la anumite fisiere de la un anumit IP
+#<Files config.php>
+#	order allow,deny
+#	deny from all
+#	allow from 5.2.321.123/5.2.321.543 #toate in intervalul asta
+#</Files>
+
+
+#permite/interzice accesul la fisierele care respecta sablonul 
+#<FilesMatch "\.(html)$">
+#	order allow,deny
+#	deny from all
+#	allow from 5.2.321.123/5.2.321.543 #toate in intervalul asta
+#</Files>
+
+How to configure phpStorm (with XAMPP and Xdebug) to display/render the web page in the browser when In RUN it
